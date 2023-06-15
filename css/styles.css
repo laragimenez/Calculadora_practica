@@ -2,6 +2,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Orbitron', sans-serif;
     background-color: #c287e8;
+    display: flex;
+    border-radius: 10px;
+    
 }
 
 .calculadora{
@@ -11,30 +14,45 @@ body {
     gap: 5px;
 }
 
-.calculadora .numero{
+.calculadora .btn{
     margin: 2px;
     font-size: 30px;
-    background-color: indigo;
-    color: white;
-    text-align: center;
-    cursor: pointer;
-}
-
-.calculadora .operador{
-    margin: 2px;
-    font-size: 30px;
+    border-radius: 5px;
     background-color: blueviolet;
     color: white;
     text-align: center;
     cursor: pointer;
 }
 
-.calculadora .numero.cero{
+.calculadora .btn.cero{
     grid-column: 1/3;
+
+}
+
+.calculadora .borrar{
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+.calculadora .iguales{
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: blueviolet;
 }
 
 .calculadora .resultado{
+    border-radius: 5px;
     margin: 2px;
     font-size: 30px;
+    text-align: center;
     grid-column: 1/5;
+    background-color: aliceblue;
+    overflow-x: auto;
 }
